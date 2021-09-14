@@ -14,7 +14,7 @@ Know that we added the key file we can filter packages to TLSV1.2, we rick click
 
 We need to find the one that looks like:
 
-![Screenshot](image.png)
+![Package](flag.png)
 
 # Flag
 
