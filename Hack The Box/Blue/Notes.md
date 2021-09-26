@@ -84,7 +84,7 @@ RPC
 smbclient -L \\\\10.10.10.40\\
 ```
 
-![Image 1](Pasted image 20210729225254.png)
+![Image 1](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Blue/Pasted%20image%2020210729225254.png)
 
 IPC$ ```smbclient \\\\10.10.10.40\\IPC$``` Empty
 
@@ -117,7 +117,7 @@ run
 
 ```sysinfo```
 
-![Image 1](Pasted image 20210729230442.png)
+![Image 1](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Blue/Pasted%20image%2020210729230442.png)
 
 
 #### Finding user.txt
