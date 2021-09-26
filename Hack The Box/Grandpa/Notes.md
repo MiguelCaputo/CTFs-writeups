@@ -81,8 +81,7 @@ The problem was that we were in a folder with no System Access
 Locating a better folder
 
 ```ps```
-
-![[Pasted image 20210804003440.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Grandpa/Pasted%20image%2020210804003440.png)
 
 We need to migrate to a session with Network Service
 
