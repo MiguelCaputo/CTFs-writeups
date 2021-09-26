@@ -8,7 +8,7 @@
 nmap -T4 -A 10.10.10.4 -Pn
 ```
 
-![[Pasted image 20210728033315.png]]
+![Image 1](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Legacy/Pasted%20image%2020210728033315.png)
 
 ## System Info 
 >
@@ -53,7 +53,7 @@ No SMB version detected
 Found that Machine is running Windows XP SP3 (language:English)
 
 
-![[Pasted image 20210728034248.png]]
+![Image 2](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Legacy/Pasted%20image%2020210728034248.png)
 
 After searching online for exploits in this version I found this [rapid7 link](https://www.rapid7.com/db/modules/exploit/windows/smb/ms08_067_netapi/)
 
