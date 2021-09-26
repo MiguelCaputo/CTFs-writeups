@@ -42,7 +42,7 @@ HTTP
 
 > http://10.10.10.75/
 
-![[Pasted image 20210801184218.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Nibble/Pasted%20image%2020210801184218.png)
 
 If we see the source we can find 
 
@@ -51,7 +51,7 @@ If we see the source we can find
 So lets check it!
  http://10.10.10.75/nibbleblog/
 
-![[Pasted image 20210801184400.png]]
+![Image 2](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Nibble/Pasted%20image%2020210801184400.png)
 
 We can perform a gobuster on the site
 
