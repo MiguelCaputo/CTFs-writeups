@@ -84,7 +84,7 @@ RPC
 smbclient -L \\\\10.10.10.40\\
 ```
 
-![[Pasted image 20210729225254.png]]
+![Image 1](Pasted image 20210729225254.png)
 
 IPC$ ```smbclient \\\\10.10.10.40\\IPC$``` Empty
 
@@ -117,7 +117,7 @@ run
 
 ```sysinfo```
 
-![[Pasted image 20210729230442.png]]
+![Image 1](Pasted image 20210729230442.png)
 
 
 #### Finding user.txt
