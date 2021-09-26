@@ -8,7 +8,7 @@
 nmap -T4 -A 10.10.10.5 -Pn
 ```
 
-![[Pasted image 20210729232622.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Hack%20The%20Box/Devel/Pasted%20image%2020210729233357.png)
 
 ## Open Ports
        
