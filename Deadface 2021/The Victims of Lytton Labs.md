@@ -53,7 +53,7 @@ Let's first look for the password
 
 ### Password
 
-![[Pasted image 20211016004636.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016004636.png)
 
 If we open that package we can see a long string that looks hashed:
 
@@ -61,7 +61,7 @@ If we open that package we can see a long string that looks hashed:
 
 We can run ```hash-identifier```  on it
 
-![[Pasted image 20211016004820.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016004820.png)
 
 We can use ```hashcat``` to try and break it, I will first try SHA-256 (module 1400 in hashcat) with the rockyou.txt wordlist
 
@@ -85,7 +85,7 @@ So is an executable, we can open it on Ghidra or Binary Ninja to see what does i
 
 I first try opening it with Ghidra but it was not working properly so I opened  it with Binary Ninja
 
-![[Pasted image 20211016010007.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016010007.png)
 
 If we analyze the code we can see that it opens a socket in the IP address ```242.29.0.0``` and then runs /bin/sh on it.
 
@@ -96,7 +96,6 @@ Weird, that's not decoding anything, it is probably some obfuscation to confuse 
 This one is supposed to be the file used to encrypt the other files, we can analyze it on Ghidra first.
 
 If we see the functions we can find some interesting ones:
-
 
 - usage
 
@@ -116,7 +115,7 @@ void usage(undefined8 param_1)
 
 So this one is actually used to encrypt the files. 
 
-![[Pasted image 20211016010458.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016010458.png)
 
 Hmmm we have a Decrypt function but it does not say anything about it on the usage, it is probably some hidden functionality
 
@@ -159,11 +158,11 @@ When decrypting "christina-a-s.txt.lcr", "britney-s.txt.lcr" and "ariana-s.txt.l
 
 But then I tried for "donald-m.txt.lcr" and I got actually readable text
 
-![[Pasted image 20211016011402.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016011402.png)
 
 So now we know that the files on the /MKSEARCH/ directory can be decrypted into text, let's try the other one "daniel-s.txt.lcr"
 
-![[Pasted image 20211016011506.png]]
+![Image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Deadface%202021/Images/Pasted%20image%2020211016011506.png)
 
 We got the flag!
 
