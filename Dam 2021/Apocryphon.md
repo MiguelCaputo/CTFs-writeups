@@ -12,7 +12,7 @@ The flag is in standard flag format.
  
  We are given a .eml file called **Iv3_g0t_yo=0u_r19ht_1n_my_7r4ck5.eml** that contains the following email
  
- ![[Dam/email.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Dam%202021/Images/email.png)
  
  If we want to check the sender we can use strings on the file
  
@@ -61,11 +61,11 @@ git config --global user.email the-information-society-231645@protonmail.com
 
 Now we make a commit to any of our repositories, and just like that we can find an user:
 
-![[commit.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Dam%202021/Images/commit.png)
 
 We can now go to his profile:
 
-![[profile.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Dam%202021/Images/profile.png)
 
 Now we just need to find the flag.... 
 
@@ -73,7 +73,7 @@ Now we just need to find the flag....
 
 In order to find the flag we need to open the repository with a phone or in responsive design mode and just like that we can see the flag.
 
-![[flag.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Dam%202021/Images/flag.png)
 
 ## Flag
 
