@@ -11,7 +11,7 @@ cat b.txt | awk '{print $3}' | awk -F ')' '{print $1}'
 
 Then we can remove the new lines, put it in cyberchef and see:
 
-![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/DCTF%2022/flag.png)
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/DCTF%202022/flag.png)
 
 ## Flag
 
