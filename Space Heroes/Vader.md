@@ -30,7 +30,7 @@ The format is RDI, RSI, RDX, RCX, R8, R9
 
 We can use ```ropr``` to see the address where each register is dropped
 
-![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo23.png)
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/Space%20Heroes/regs.png)
 
 pop_rdi = 0x0040165b
 pop_rsi = 0x00401659; r15 (We just need to add p64(0) after the second argument)
